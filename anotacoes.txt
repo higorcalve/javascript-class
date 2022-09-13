@@ -1,0 +1,100 @@
+HTML: linguagem de marcação (desenvolve)
+CSS: linguagem de estilo (desenvolve)
+JS: linguagem de programação! (programa)
+
+Carrega-se primeiro o conteúdo JavaScript e só depois o HTML
+
+Pop-up de Alerta na tela:
+window.alert("Minha primeira mensagem!")
+Opção "Ok"
+
+Pop-up de Confirmação na tela:
+window.confirm("Está gostando de JS?")
+Opção "Ok" e "Cancelar"
+
+Pop-up de Perguntas na tela:
+window.prompt("Qual é seu nome?")
+Caixa de texto e "Ok"
+
+Pode remover a palavra "window." no código
+Nos casos acima não precisa de ";" no final
+
+Módulo B:
+- Armazenamento de dados
+- Tratamento de dados
+- Operações com dados
+
+Comentários em JS:
+// para comentário em 1 linha
+ou 
+/* */ para comentário em mais de 1 linha
+
+VARIÁVEIS EM JS. (var)
+
+vaga a1 = carro1 == vaga a1 recebe carro1
+UM sinal de = (igual) significa RECEBE
+
+Para vaga a1 = carro2 == vaga a1 recebe carro2 (a1 substitui carro1 por carro2!)
+
+vaga a1 = null == nula == vazia (esvazia a1)
+
+** Atribuição
+var n1 = 5 
+var n2 = 8.5
+var n3 = 13
+(number)
+
+var s1 = "JavaScript"
+var s2 = 'Curso em Vídeo'
+var s3 = `Guanabara`
+(string -> entre aspas duplo, aspas simples, crase TEM DIFERENÇA)
+
+** Identificadores
+Regras:
+- Podem começar com letra, $ ou _
+- Não podem começar com números
+- É possível usar letras ou números
+- É possível utilizar acentos ou símbolos
+- Não podem conter espaços (substituir por _ )
+- Não podem ser palavras reservadas (function, alert, var.....)
+
+ABRINDO O NODE
+1ª opção: pelo Iniciar > Node.JS
+2ª opção: pelo VSCode > Terminal > Novo Terminal > node
+
+para sair do node: .exit
+para fechar o terminal: exit
+
+Ctrl + L >> limpa o terminal
+
+Dicas para Identificadores:
+- Maiúsculas e Minúsculas fazem a difença
+- Escolha nomes coerentes para as variáveis
+
+Tipos Primitivos:
+
+Números Inteiros == 1; 5; 10
+Números Reais (Float) == 0.5; -15.9; 8.0
+Para JS Inteiros e Reais são *number*
+   > Infinity
+   > NaN == not an number
+
+CPF, Telefone
+Cadeias de Caracteres == *string*
+
+true ; false
+Valores Booleanos == *boolean*
+
+*null* (para JS é um object)
+diferente de
+*undefined*
+
+*object*
+   > Array
+
+*function*
+
+typeof == tipo de
+(mostra o tipo primitivo da variável)
+
+Definir uma váriável em JS não significa definir um tipo primitivo!
