@@ -5,16 +5,20 @@ JS: linguagem de programação! (programa)
 Carrega-se primeiro o conteúdo JavaScript e só depois o HTML
 
 Pop-up de Alerta na tela:
-window.alert("Minha primeira mensagem!")
+window.alert(Minha primeira mensagem!')
 Opção "Ok"
 
 Pop-up de Confirmação na tela:
-window.confirm("Está gostando de JS?")
+window.confirm('Está gostando de JS?')
 Opção "Ok" e "Cancelar"
 
 Pop-up de Perguntas na tela:
-window.prompt("Qual é seu nome?")
+window.prompt('Qual é seu nome?')
 Caixa de texto e "Ok"
+
+document.write('Seu nome é ${nome}')
+   Interpolação (aula 06)
+   Escreve no documento (não em pop-up)
 
 Pode remover a palavra "window." no código
 Nos casos acima não precisa de ";" no final
@@ -71,7 +75,9 @@ Dicas para Identificadores:
 - Maiúsculas e Minúsculas fazem a difença
 - Escolha nomes coerentes para as variáveis
 
-Tipos Primitivos:
+(Mod-B 05):
+
+Tipos Primitivos (Data Types)
 
 Números Inteiros == 1; 5; 10
 Números Reais (Float) == 0.5; -15.9; 8.0
@@ -98,3 +104,54 @@ typeof == tipo de
 (mostra o tipo primitivo da variável)
 
 Definir uma váriável em JS não significa definir um tipo primitivo!
+
+(Mod-B 06)
+
+Tratamento/Manipulação de Dados: (var/let/const são diferentes)
+
+A variável nome recebe o resultado do prompt que vai aparecer na janela.
+var nome = window.prompt ("Qual é o seu nome?")
+
+Para mostrar o valor da variável nome:
+window.alert("É um prazer te conhecer, " + nome) >> o sinal de 
+
++ soma number
++ concatena string
+
+window.prompt sempre retorna uma String!
+
+Conversão de String para Número:
+   >Number(n) => converte para Number (independente se é inteiro ou real)
+   >Number.parseInt(n)   Para números inteiros      (pode remover o "Number") (I do Int é maiúsculo!)
+   >Number.parseFloat(n) Para números reais (com .) (pode remover o "Number") (F do Float é maiúsculo!)
+
+Conversão de Número para String:
+   >String(n)
+   >n.toString()
+
+Interpolação::
+var s = 'JavaScript'
+
+Template String:
+Necessita-se usar CRASE (') para a frase
+Usar ${s} (placeholder)
+   >'Eu estou aprendendo ${s}'
+
+s.lenght >> informa quantos caracteres a string tem
+não tem parênteses pois não retorna nada
+
+s.toUpperCase() >> tudo para 'MAIÚSCULAS'
+
+s.toLowerCase() >> tudo para 'minúsculas'
+
+document.write() >> escreve no documento
+document.writeln() >> pula linha
+
+
+Manipulando números:
+
+n1.toFixed(2) >> 2 casas decimais
+
+n1.toFixed(2).replace('.', ',') >> substitui ponto por vírgula
+
+n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$)
