@@ -5,7 +5,7 @@ JS: linguagem de programação! (programa)
 Carrega-se primeiro o conteúdo JavaScript e só depois o HTML
 
 Pop-up de Alerta na tela:
-window.alert(Minha primeira mensagem!')
+window.alert('Minha primeira mensagem!')
 Opção "Ok"
 
 Pop-up de Confirmação na tela:
@@ -137,7 +137,7 @@ Necessita-se usar CRASE (') para a frase
 Usar ${s} (placeholder)
    >'Eu estou aprendendo ${s}'
 
-s.lenght >> informa quantos caracteres a string tem
+s.lenght >> informa quantos caracteres a string tem (atributo)
 não tem parênteses pois não retorna nada
 
 s.toUpperCase() >> tudo para 'MAIÚSCULAS'
@@ -150,8 +150,8 @@ document.writeln() >> pula linha
 
 Manipulando números:
 
-n1.toFixed(2) >> 2 casas decimais
+n1.toFixed(2) >> 2 casas decimais (método interno)
 
 n1.toFixed(2).replace('.', ',') >> substitui ponto por vírgula
 
-n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$)
+n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$) >> Localizar uma String em pt-br. mostrar (style) em valor monetário (currency). currency vai ser em BRL (real do Brasil)
