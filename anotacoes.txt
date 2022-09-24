@@ -155,3 +155,64 @@ n1.toFixed(2) >> 2 casas decimais (método interno)
 n1.toFixed(2).replace('.', ',') >> substitui ponto por vírgula
 
 n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$) >> Localizar uma String em pt-br. mostrar (style) em valor monetário (currency). currency vai ser em BRL (real do Brasil)
+
+(Mod-B 07-pt1)
+
+Operadores (Parte 1)
+
+Aritméticos;
+Atribuição;
+Relacionais;
+Lógicos;
+Ternário.
+
+Aritméticos:
+Operadores Binários
+(+) == soma
+(-) == subtração
+(*) == multiplicação
+(/) == divisão (real, leva vírgula)
+(%) == resto (da divisão inteira) (if x % 2 == 1 , x é impar)
+(**) == potência (elevado à)
+
+Ordem de Precedência de Operadores:
+()
+**
+* , / , %  ordem da esquerda para direita
++ , -
+
+Exemplos com Operador de Atribuição (=)
+var a = 5 + 8
+a = 8 
+var b = a % 5
+b = 3
+var c = 5 * b ** 2  >>  3 ** 2  >>  5 * 9
+c = 45
+var d = 10 - a / 2  >>  8 / 2  >>  10 - 4
+d = 6
+var e = 6 * 2 / d  >>  6 * 2  >>  12 / 6
+e = 2
+var f = b % e + 4 / e  >>  3 % 2  >>  1 + 4 / e  >>  4 / 2  >>  1 + 2
+f = 3
+
+Auto-atribuições
+var n = 3
+
+n = n + 4  >> n += 4
+n = 7
+n = n - 5  >> n -= 5
+n = 2
+n = n * 4  >> n *= 4
+n = 8
+n = n / 2  >> n /= 2
+n = 4
+n = n **2  >> n **=2
+n = 16
+n = n % 5  >> n %= 5
+n = 1
+
+n = n + 1  >> n++ (++ depois é pós-incremento)
+n = n - 1  >> n-- (-- depois é pós-decremento)
+
+++n é pré-incremento
+--n é pré-decremento
