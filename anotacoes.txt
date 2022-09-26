@@ -216,3 +216,58 @@ n = n - 1  >> n-- (-- depois é pós-decremento)
 
 ++n é pré-incremento
 --n é pré-decremento
+
+(Mod-B 07-pt2)
+
+Relacionais:
+-Maior: >
+-Menor: <
+-Maior ou igual: >=
+-Menor ou igual: <=
+-Igual: ==
+-Não Igual: != (diferente)
+
+Para toda operação relacional, o resultado será sempre um valor booleano!
+
+Identidade:
+5 == 5   >> true
+5 == '5' >> true
+Em JavaScript 2 = não testa o tipo, mas o mesmo valor/grandeza
+5 === '5'  >> false
+Em JavaScript 3 = testa se são idênticos.
+5 !== '5'  >> true (desigual restrito)
+
+Lógicos:
+!  >> negação (não)
+&& >> conjunção (e)
+|| >> disjunção (ou)
+
+(!) operador unário:
+!true -> false
+!false -> true
+
+(&&) operador binário:
+true && true -> true
+true && false -> false
+false && true -> false
+false && false -> false
+SÓ SE SATISFAZ QUANDO AS DUAS FOREM TRUE
+
+(||) operador binário:
+true || true -> true
+true || false -> true
+false || true -> true
+false || false -> false
+BASTA UM TRUE PARA SATISFAZER
+
+Precedência de Operadores:
+Aritméticos > Relacionais > Lógicos
+
+Precedência dos Operadores Lógicos:
+! > && > ||
+
+Operador Ternário:
+(?) -> Teste
+(:) -> Resultado True:False (oque acontece se for verdadeiro : falso)
+Ex.:
+média >=7.0 ? "Aprovado" : "Reprovado"
