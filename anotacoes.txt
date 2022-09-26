@@ -156,9 +156,9 @@ n1.toFixed(2).replace('.', ',') >> substitui ponto por vírgula
 
 n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$) >> Localizar uma String em pt-br. mostrar (style) em valor monetário (currency). currency vai ser em BRL (real do Brasil)
 
-(Mod-B 07-pt1)
+(Mod-B - Operadores)
 
-Operadores (Parte 1)
+(pt1) Aula 07
 
 Aritméticos;
 Atribuição;
@@ -217,7 +217,7 @@ n = n - 1  >> n-- (-- depois é pós-decremento)
 ++n é pré-incremento
 --n é pré-decremento
 
-(Mod-B 07-pt2)
+(pt2) Aula 08
 
 Relacionais:
 -Maior: >
@@ -271,3 +271,58 @@ Operador Ternário:
 (:) -> Resultado True:False (oque acontece se for verdadeiro : falso)
 Ex.:
 média >=7.0 ? "Aprovado" : "Reprovado"
+
+(Mod-C - DOM)
+Document Object Model (Modelo de Objetos para Documentos)
+
+Árvore DOM (parent(acima) e child(abaixo))
+Começa da Raiz
+
+Tudo dentro do JS está dentro do objeto window (janela)
+
+Dentro de window tem vários outros objetos, exemplo:
+location (qual é a página, URL);
+document (atual);
+history (histórico de onde você veio e para onde vai).
+
+Dentro de document, tem outros objetos, como:
+html
+
+Dentro do html tem:
+head;
+body.
+
+Dentro de head:
+meta;
+title.
+
+Dentro de body:
+h1;
+p;
+div.
+
+Resumindo: não é o ideal, mas você pode adicionar componentes com JS através da árvore DOM.
+innerText == texto interno
+innerHTML == texto formatado
+
+Selecionando os Elementos por: getElementsBy
+-Marca (TagName);
+-ID (Id);
+-Nome (Name);
+-Classe;
+-Seletor (CSS)
+
+Marca:
+document.getElementsByTagName('elemento')[nº do elemento iniciando em 0]
+
+ID:
+document.getElementById('Id')
+
+Nome:
+document.getElementsByTagName('nome')[nº do elemento iniciando em 0]
+
+Classe:
+document.getElementsByClassName('classe')[nº do elemento iniciando em 0]
+
+Seletor (recomendada):
+document.querySelector('seletor CSS id/class')
