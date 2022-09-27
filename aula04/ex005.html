@@ -16,8 +16,8 @@
 <body>
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
-    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
-    <div id="msg">Clique em mim</div>
+    <p id="msg">Aprendendo a usar o <strong>DOM</strong> em JavaScript.</p>
+    <div>Clique em mim</div>
     <script>
         /* var corpo = window.document.body
         corpo.style.background = 'lightblue' */
@@ -26,7 +26,7 @@
         p1.style.color = 'yellow'
 
         var d = window.document.getElementById('msg')
-        window.document.write('<br>Replicando com document.write(var.innerText): ' + d.innerHTML + '</br>')
+        window.document.write('<br>Replicando com document.write(var.innerHTML): ' + d.innerHTML + '</br>')
         d.style.background = 'green'
 
         var d = document.querySelector('#msg')

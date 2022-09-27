@@ -326,3 +326,45 @@ document.getElementsByClassName('classe')[nº do elemento iniciando em 0]
 
 Seletor (recomendada):
 document.querySelector('seletor CSS id/class')
+
+(Aula 10)
+
+EVENTOS DOM
+Tudo oque pode acontecer com um elemento.
+
+mouseenter >> quando o mouse entra na área do elemento
+mousemove >> disparado o evento enquanto o mouse se move dentro da área
+mousedown >> enquanto o mouse estiver clicado
+mouseup >> quando soltar o click
+click >> movimento de click do mouse
+mouseout >> quando o mouse sai da área
+
+FUNÇÃO
+Conjunto de códigos que vão ser executadas somente quando o evento ocorrer
+Cria-se um bloco (a função) dentro de chaves para que ele possa ser executado.
+function ação(parâmetros) {
+   bloco
+}
+No JS existe função anônima, mas para que o método funcione é necessário nomear a function (ações)
+
+Para disparar uma ação:
+Em HTML:
+na <div id="area" onclick="clicar()">  == evento onclick: quando eu clicar na div#area dispara a função clicar()
+no script criar a função
+function clicar() {
+   var a = window.document.getElementById('area')
+   a.innerText = 'Clicou!'
+}
+isto vai alterar o texto para "Clicou!"
+
+Em JavaScript (para não poluir o HTML):
+tag <div id="area"> limpa
+no script adiciona o evento
+var a = document.getElementById('area')
+a.addEventListener('mouseenter', entrar)  == var.addEventListener('event', function)
+function entrar() {
+   a.innerText = 'Entrou!'
+}
+
+Caso tenha algum erro no código (escrita), abrir o DevTools e ir na aba Console.
+Irá exibir o erro e a linha
