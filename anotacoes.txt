@@ -368,3 +368,22 @@ function entrar() {
 
 Caso tenha algum erro no código (escrita), abrir o DevTools e ir na aba Console.
 Irá exibir o erro e a linha
+
+(Mod-D - CONDIÇÕES)
+
+(Aula 11)
+
+Condição Simples:
+if (condição) {
+   true
+}
+
+Condição Composta
+if (condição) {
+   true
+} else {
+   false
+}
+
+
+console.log('Hello, World!')
