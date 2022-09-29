@@ -8,10 +8,16 @@
 </head>
 <body>
     <h1>Somando valores</h1>
-    <input type="number" name="txtn1" id="txtn1">+
-    <input type="number" name="txtn2" id="txtn2">
-    <input type="button" value="somar" onclick="somar()">
-    <div id="res">Resultado:</div>
+    <form>
+        <label for="txtn1">Digite um número: </label>
+        <input type="number" name="txtn1" id="txtn1">
+        <div>+</div>
+        <label for="txtn2">Digite outro número: </label>
+        <input type="number" name="txtn2" id="txtn2">
+        <br>
+        <input type="button" value="somar" onclick="somar()">
+        <div id="res"><br>Aqui vem o restultado: </div>
+    </form>
     <script>
         function somar() {
             var tn1 = window.document.getElementById('txtn1') // caixa de texto = string
@@ -20,7 +26,7 @@
             var n1 = Number(tn1.value) // String para Number
             var n2 = Number(tn2.value) // String para Number
             var s = n1 + n2
-            res.innerHTML = `A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
+            res.innerHTML = `<br>A soma entre ${n1} e ${n2} é igual a <strong>${s}</strong>`
         }
     </script>
 </body>
