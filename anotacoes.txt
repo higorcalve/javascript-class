@@ -385,5 +385,33 @@ if (condição) {
    false
 }
 
+Condição Aninhada
+if (condição1) {
+   true
+}  elseif (condição2) {
+      true
+   }  else {
+         false
+      }
+
+Condição Múltipla (NÃO ESQUECER DE INSERIR O BREAK)
+switch (expressão) {
+   case valor1:
+
+   break
+   case valor2:
+
+   break
+   case valor3:
+
+   break
+   default:
+   (como se fosse um else)
+   break
+}
+
 
 console.log('Hello, World!')
+
+var agora = new Date()
+var hora = agora.getHours() ->> mostra a hora atual do sistema.
