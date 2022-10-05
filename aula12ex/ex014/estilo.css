@@ -16,11 +16,22 @@ section {
     width: 500px;
     margin: auto;
     border-radius: 10px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.500);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.500);
+}
+
+div {
+    text-align: center;
+    padding: 10px;
 }
 
 footer {
     color: white;
     text-align: center;
+}
+
+a {
     font-style: italic;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
 }
