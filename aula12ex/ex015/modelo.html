@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificador de Idade</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Verificador de Idade</h1>
+    </header>
+    <section>
+        <div>
+            <p>Ano de Nascimento
+                <input type="number" name="txtano" id="txtano">
+            </p>
+            <p>Sexo:
+                <input type="radio" name="radsex" id="masc" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" name="radsex" id="fem">
+                <label for="fem">Feminino</label>
+            </p>
+            <p>
+                <input type="button" value="Verificar" onclick="verificar()"> <!-- ao clicar, dispara a função "verificar()" -->
+            </p>
+        </div>
+        <div id="res">
+            <p>PRENCHA OS DADOS PARA OBTER O RESULTADO</p>
+            <br>
+            <img id="foto" src="avatar-icon.png" alt="Icone do Avatar">
+        </div>
+    </section>
+    <footer>
+        <p>Exercício realizado por <a href="https://github.com/higorcalve" target="_blank">Higor Calve</a> no <a href="https://youtube.com/playlist?list=PLHz_AreHm4dlsK3Nr9GVvXCbpQyHQl1o1" target="_blank">Curso de JavaScript no Curso Em Vídeo</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

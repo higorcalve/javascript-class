@@ -133,9 +133,9 @@ Interpolação::
 var s = 'JavaScript'
 
 Template String:
-Necessita-se usar CRASE (') para a frase
+Necessita-se usar CRASE (`) para a frase
 Usar ${s} (placeholder)
-   >'Eu estou aprendendo ${s}'
+   >`Eu estou aprendendo ${s}`
 
 s.lenght >> informa quantos caracteres a string tem (atributo)
 não tem parênteses pois não retorna nada
@@ -411,7 +411,12 @@ switch (expressão) {
 }
 
 
-console.log('Hello, World!')
+console.log('Hello, World!') ->> exibe no console Hello, World!
 
-var agora = new Date()
-var hora = agora.getHours() ->> mostra a hora atual do sistema.
+var agora = new Date() ->> pega a data e hora atual
+var hora = agora.getHours() ->> mostra a HORA atual do sistema.
+var data = data.getFullYear() ->> mostra o ANO atual do sistema.
+
+var img = document.createElement('img') ->> cria a imagem no JS
+img.setAttribute('id', 'foto') ->> cria um <img id="foto">
+var.appendChild(img) ->> insere a <img id="foto">
