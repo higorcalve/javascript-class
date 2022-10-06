@@ -420,3 +420,19 @@ var data = data.getFullYear() ->> mostra o ANO atual do sistema.
 var img = document.createElement('img') ->> cria a imagem no JS
 img.setAttribute('id', 'foto') ->> cria um <img id="foto">
 var.appendChild(img) ->> insere a <img id="foto">
+
+document.body.style.background = '#000000'
+
+(MOD-E REPETIÇÕES)
+
+Pré-Testada:
+function () {
+   while (condição){
+      true
+   }
+}
+
+Pós-Testada:
+do {
+   true
+} while (condição)
