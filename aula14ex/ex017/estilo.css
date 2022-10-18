@@ -19,6 +19,10 @@ section {
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.500);
 }
 
+#seltab{
+    margin-top: 10px;
+}
+
 footer {
     color: white;
     text-align: center;
