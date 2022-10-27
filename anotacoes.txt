@@ -483,3 +483,31 @@ Para cada pos em num exibe (num[pos])
 Para buscar um valor dentro do vetor e exibir qual a chave em que ele se encontra:
 num.indexOf(valor)
    caso ele não encontre, vai retornar na tela -1
+
+Aula 16:
+FUNÇÕES:
+Ações executadas assim que são chamadas ou em decorrência de um evento.
+Porem receber parâmetros e retornar um resultado.
+
+Toda função tem:
+   Chamada (disparo)
+   Parâmetro (entrada/saída)
+   Ação
+   Retorno
+
+function parimp(n) {
+   if (n%2 == 0) {
+      return 'par'
+   } else {
+      return 'impar'
+   }
+}
+let res = parimp(n)
+
+   parimp == chamada
+   n == parâmetro
+   { } == ação
+   return == retorno
+
+
+Se eu não informar o valor de um parâmetro real, posso informar no parâmetro formal (utilizando o =)
