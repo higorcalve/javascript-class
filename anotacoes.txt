@@ -511,3 +511,22 @@ let res = parimp(n)
 
 
 Se eu não informar o valor de um parâmetro real, posso informar no parâmetro formal (utilizando o =)
+
+Aula 17:
+
+Estudar a mais:
+   > functions
+   > object
+   > modularização (utilizar arquivos separados)
+   > RegEx (expressões regulares)
+   > JSON
+   > AJAX
+   > NodeJS (backend)
+   > Framework
+
+INTRODUÇÃO À OBJETOS:
+variável = {}
+
+let amigo = {nome:'José', sexo: 'M', peso: '85.4', engordar(){} }
+
+Objetos são variáveis que podem guardam valores e também funcionalidades (métodos).
