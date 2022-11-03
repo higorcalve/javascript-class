@@ -4,6 +4,10 @@ JS: linguagem de programação! (programa)
 
 Carrega-se primeiro o conteúdo JavaScript e só depois o HTML
 
+window == objeto
+alert() == método (tem parênteses -> retorna algo)
+push == atributo (não tem parênteses -> não retorna nada)
+
 Pop-up de Alerta na tela:
 window.alert('Minha primeira mensagem!')
 Opção "Ok"
@@ -83,7 +87,7 @@ Números Inteiros == 1; 5; 10
 Números Reais (Float) == 0.5; -15.9; 8.0
 Para JS Inteiros e Reais são *number*
    > Infinity
-   > NaN == not an number
+   > NaN == not an number (uma conta é um NaN , porém o resultado dela é um number)
 
 CPF, Telefone
 Cadeias de Caracteres == *string*
