@@ -20,7 +20,7 @@ Pop-up de Perguntas na tela:
 window.prompt('Qual é seu nome?')
 Caixa de texto e "Ok"
 
-document.write('Seu nome é ${nome}')
+document.write(`Seu nome é ${nome}`)
    Interpolação (aula 06)
    Escreve no documento (não em pop-up)
 
