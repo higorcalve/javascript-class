@@ -1,6 +1,6 @@
 function converter() {
     let res = document.querySelector('div#resultado')
-    let distancia = prompt('Informe uma distância (em metros):')
+    let distancia = Number(prompt('Informe uma distância (em metros):'))
 
     res.innerHTML = (`<p>A distância de ${distancia} metros corresponde à...</p>`)
 
@@ -14,12 +14,12 @@ function converter() {
     res.innerHTML += (`<p>${dam.toFixed(3).replace('.',',')} decâmetros (Dam)</p>`)
     
     let dm = distancia * 10
-    res.innerHTML += (`<p>${dm.toFixed(3).replace('.',',')} decímetros (dm)</p>`)
+    res.innerHTML += (`<p>${dm.toFixed(1).replace('.',',')} decímetros (dm)</p>`)
 
-    let cm = distancia * 100
-    res.innerHTML += (`<p>${cm.toFixed(3).replace('.',',')} centímetros (cm)</p>`)
+    let cm = distancia * 0.1
+    res.innerHTML += (`<p>${cm.toFixed(3)} centímetros (cm)</p>`)
 
-    let mm = distancia * 1000
-    res.innerHTML += (`<p>${mm.toFixed(3).replace('.',',')} milímetros (mm)</p>`)
+    let mm = distancia * 1
+    res.innerHTML += (`<p>${mm.toFixed(3)} milímetros (mm)</p>`)
     
 }
