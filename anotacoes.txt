@@ -158,7 +158,7 @@ n1.toFixed(2) >> 2 casas decimais (método interno)
 
 n1.toFixed(2).replace('.', ',') >> substitui ponto por vírgula
 
-n1.toLocaleString('pr-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$) >> Localizar uma String em pt-br. mostrar (style) em valor monetário (currency). currency vai ser em BRL (real do Brasil)
+n1.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}) >> para colocar o valor em Real (R$) >> Localizar uma String em pt-br. mostrar (style) em valor monetário (currency). currency vai ser em BRL (real do Brasil)
 
 (Mod-B - Operadores)
 
