@@ -1,0 +1,28 @@
+@charset "UTF-8";
+
+body {
+    font: 12pt Arial;
+}
+
+button {
+    font-size: 12pt;
+    padding: 30px;
+}
+
+mark {
+    font-weight: bolder;
+}
+mark#reprovado {
+    color: rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.500);
+}
+
+mark#recuperacao {
+    color: rgb(255, 72, 0);
+    background-color: rgba(255, 255, 0, 0.500);
+}
+
+mark#aprovado {
+    color: rgb(0, 100, 0);
+    background-color: rgba(0, 255, 0, 0.500);
+}
